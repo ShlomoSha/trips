@@ -2,8 +2,11 @@ import express, { Request, Response }  from "express"
 import cors from "cors"
 import settingsRouter from "./routes/sttings.route"
 import expenseRouter from "./routes/expense.route"
+import { connectToMongo } from "./config/db"
 
 const app = express()
+
+connectToMongo()
 
 app.use(cors())
 app.use(express.json())
