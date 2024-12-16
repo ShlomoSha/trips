@@ -1,7 +1,7 @@
 import { constSchema } from "../models/constModel"
 import { daySchema } from "../models/dayModel"
-import { sttingSchema } from "../models/settingModel"
+import { settingSchema } from "../models/settingModel"
 
-export type Stting = ReturnType<() => typeof sttingSchema>
+export type Setting = ReturnType<() => typeof settingSchema>
 export type Const = ReturnType<() => typeof constSchema>
 export type Day = ReturnType<() => typeof daySchema>

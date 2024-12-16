@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
 
-export const sttingSchema = new Schema({
+export const settingSchema = new Schema({
     total: {
         type: Number,
         default: 0,
@@ -27,4 +27,4 @@ export const sttingSchema = new Schema({
     }
 })
 
-export const SttingModel = model('Stting', sttingSchema)
+export const SettingsModel = model('Stting', settingSchema)
